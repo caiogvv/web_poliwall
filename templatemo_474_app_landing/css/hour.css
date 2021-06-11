@@ -1,0 +1,858 @@
+/* Polibook css
+/*  !! linha 407*/
+*/
+*/ test
+\*
+/* The side navigation menu */
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+	
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+	
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #0d0d0d;
+	
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+
+/*#menuzinho{
+	position:absolute;
+	} */
+
+#main {
+    transition: margin-left .5s;
+   
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+*/
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Light.eot');
+    src: local('Fira Sans Light'),
+         url('../fonts/FiraSans-Light.eot') format('embedded-opentype'),
+         url('../fonts/FiraSans-Light.woff') format('woff'),
+         url('../fonts/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Regular.eot');
+    src: local('Fira Sans Regular'),
+         url('../fonts/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('../fonts/FiraSans-Regular.woff') format('woff'),
+         url('../fonts/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Bold.eot');
+    src: local('Fira Sans Bold'),
+         url('../fonts/FiraSans-Bold.eot') format('embedded-opentype'),
+         url('../fonts/FiraSans-Bold.woff') format('woff'),
+         url('../fonts/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+html {
+    overflow: hidden;
+}
+body {
+    background: #455a64;
+    overflow: auto;
+    height: 100vh;
+}
+/***** Typography *****/
+body, p, a, th, td, li, dl, .form-control { font: normal normal 300 18px/2em 'Fira Sans';}
+b, strong, dt { font-weight: 400;}
+h1, h2, h3, h4, h5, h6 { line-height: 2em;}
+/***** Material Shadow *****/
+.shadow-top-down {
+    box-shadow: 0px 8px 8px -4px rgba(0,0,0,0.75);
+    transition: all .5s;
+}
+.shadow-top-down:hover { box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);}
+/***** Material Form Elements *****/
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+form .form-group { margin-top: 30px;}
+form input.form-control,
+form button.form-control,
+form textarea.form-control ,
+form select.form-control {
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #233842;
+    border-radius: 0px;
+    height: 45px;
+}
+form input.form-control:focus,
+form button.form-control:focus,
+form textarea.form-control:focus {
+    border-bottom-color: #c0c0c0;
+    box-shadow: none;
+}
+form button.form-control {
+    background-color: #275267;
+    transition: .5s;
+}
+form button.form-control[type=reset] { background-color: transparent;}
+form button.form-control:hover,
+form button.form-control:focus {
+    border-bottom-color: #275267;
+    background-color: #1c2d35;
+}
+form textarea.form-control { min-height: 120px;}
+form .input-group-addon { 
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #233842;
+    vertical-align: top;
+    border-radius: 0;
+    color: white;
+}
+form .input-group-addon i { padding-top: 10px;color: #000;}
+form .checkbox input[type=checkbox] { margin-top: 12px;}
+/***** Images Padding Config *****/
+.img-rounded { border-radius: 4px;}
+.img-n-pargaraph .pull-right {
+    padding: 0;
+    margin: 10px 0 15px 15px;
+}
+.img-n-pargaraph .pull-left {
+    padding: 0;
+    margin: 10px 15px 15px 0;
+}
+/***** Template Header *****/
+header.template_header h1 {
+    font: normal normal 200 50px/150px 'Fira Sans', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+header.template_header h1 span {
+    position: relative; 
+    top: -15px;
+}
+
+
+/***** Home *****/
+#template_teste{
+}
+#templatemo_home {
+    background: #154558 url(../images/jumbo_background.png) fixed;
+    /*background:  url(../images/.jpg) fixed;*/
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 130px;
+    color: #fff;
+}
+#templatemo_home .templatemo_home_inner_wapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+#templatemo_home h1 {
+    margin-top: 20vh;
+    font: normal normal 400 70px/80px 'Fira Sans', sans-serif;
+}
+#templatemo_home h2 {
+    font: normal normal 100 36px/40px 'Fira Sans', sans-serif;
+}
+#templatemo_home p {
+    margin: 50px 0 50px 0;
+    font: normal normal 100 18px/40px 'Fira Sans', sans-serif;
+}
+#templatemo_home p a {
+    background-color: rgba(255,255,255,.6);
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+}
+#templatemo_home p a:hover {
+    background-color: rgba(255,255,255,.75);
+    border-bottom: 0px dotted #000;
+}
+#templatemo_home a.btn_wapper {
+    margin-bottom: 150px;
+}
+#templatemo_home a.btn {
+    font: normal normal 300 18px/60px 'Fira Sans', sans-serif;
+    margin-bottom: 30px;
+    border-radius: 0px;
+    background: #fff;
+    height: 63px;
+    color: #000;
+    padding: 0;
+}
+/***** Features *****/
+#templatemo_features {
+    background: #455a64 url(../images/pattern_bg.png) fixed;
+    padding-bottom: 130px;
+}
+#templatemo_features p {
+    padding-bottom: 30px;
+    text-align: center;
+}
+#templatemo_features .feature-box {
+    transition: all .5s;
+    background: transparent;
+    padding: 40px 0 40px 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#templatemo_features .feature-box:hover {
+    padding: 0;
+    color: #fff;
+}
+#templatemo_features .feature-box .feature-box-inner {
+    box-shadow: inset 0px 0px 0 10px #cecece;
+    border-bottom: 10px solid #cecece;
+    border-top: 10px solid #cecece;
+    transition: all .5s;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+}
+#templatemo_features .feature-box:hover .feature-box-inner {
+    box-shadow: inset 0px 0px 0px 0px #cecece;
+    border-bottom: 10px solid #B9090B;
+    border-top: 10px solid #B9090B;
+    padding: 60px 20px 60px 20px;
+    background: #F2F2F2;
+}
+#templatemo_features .feature-box p {
+    max-width: 250px;
+    min-height: 260px;
+    line-height: 32px;
+    padding-top: 30px;
+    font-size: 18px;
+    margin: auto;
+	color:#000000
+}
+#templatemo_features .feature-box .feature-box-icon {
+    border-radius: 0px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 56px;
+    color:#B9090B;
+}
+/***** Download *****/
+#templatemo_download { 
+    background: url(../images/download_background.png) fixed;
+}
+#templatemo_download h2 {
+    font: normal normal 100 100px/150px 'Fira Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+#templatemo_download p {
+    text-align: center;
+    color: #fff;
+}
+#templatemo_download a {
+    margin: 50px auto 100px auto;
+    display: block;
+    width: 260px;
+}
+#templatemo_download .templatemo_download_text_wapper {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+/***** Element *****/
+#templatemo_element .container {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+#templatemo_element header h1 { color: #000;}
+#templatemo_element #element-icon-wapper {
+    overflow: hidden;
+    border-radius: 5px;
+}
+#templatemo_element #element-icon-wapper > div {
+    background-color: rgba(0,0,0,.05);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+#templatemo_element #element-icon-wapper > div:hover {
+    transition: .5s;
+    background-color: rgba(0,0,0,.2);
+}
+#templatemo_element #element-icon-wapper a { color: #000;}
+#templatemo_element #img-grid-wapper > div { padding: 5px;}
+/***** Contact *****/
+#templatemo_contact {
+    background: #455a64 url(../images/pattern_bg.png) fixed;
+    color: #fff;
+}
+#templatemo_contact header h1 { color: #fff;}
+#templatemo_contact p, #templatemo_contact a  {
+    line-height: 2.5em;
+    color: #fff;
+}
+#templatemo_contact form .form-group { margin-top: 30px;}
+#templatemo_contact form input.form-control{ border-bottom: 3px solid #fff;color: #fff;}
+#templatemo_contact form textarea.form-control,
+#templatemo_contact form select.form-control { border-bottom: 3px solid #fff;color: #fff;}
+#templatemo_contact form input.form-control:focus,
+#templatemo_contact form button.form-control:focus,
+#templatemo_contact form textarea.form-control:focus { border-bottom-color: #B9090B;}
+#templatemo_contact form textarea.form-control { min-height: 120px;}
+#templatemo_contact form .input-group-addon { border-bottom: 3px solid #fff;}
+#templatemo_contact form .input-group-addon i { color: #fff;}
+#templatemo_contact form button.form-control {border-bottom-color:#B9090B; background-color: #B9090B; color: #fff;}
+
+#templatemo_contact .social {
+    margin: 0px auto 40px auto;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+#templatemo_contact .social li {
+    margin-left: 0;
+    width: 25%;
+}
+#templatemo_contact .social a {
+    margin: 50px auto 4px auto;
+    background-color: #fff;
+    border-radius: 50px;
+    padding-top: 15px;
+    font-size: 40px;
+    line-height: 40px;
+    transition: .5s;
+    display: block;
+    height: 70px;
+    color: #fff;
+    width: 70px;
+}
+#templatemo_contact .social a:hover {
+    transform: rotate(360deg);
+    color: #223741;
+}
+#templatemo_contact .social .social-facebook { background: #4a6fb5;}
+#templatemo_contact .social .social-twitter { background: #28a9e0;}
+#templatemo_contact .social .social-youtube { background: #f86d70;}
+#templatemo_contact .social .social-instagram { background: #cab9a9;}
+/***** Footer *****/
+footer {
+    padding: 20px 0 16px 0;
+    text-align: center;
+    background: #fff;
+}
+.footer-copyright p {
+    margin:20px auto 20px auto;
+    text-align: center;
+    line-height: 32px;
+    color: #666;
+}
+.footer-copyright a { 
+    border-bottom: 1px dotted #fff;
+    color: #666;
+}
+.footer-copyright a:hover {
+    color: #000;
+    border: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .show-menu {right: 50px;}  /*<!--position FIXED -->   •Fui eu que fiz isso aqui?*/
+    nav.main-menu {right: 50px;}
+}
+@media (max-width: 991px) {
+    .show-menu {right: 30px; }
+    nav.main-menu {right: 30px;}
+}
+@media (max-width: 767px) {
+    #templatemo_download h2 {font-size: 70px;}
+    #templatemo_home h2 {font-size: 26px;}
+}
+@media (max-width: 400px) {
+    nav.main-menu {right: 10px;}
+    .show-menu {right: 10px;}
+    #templatemo_contact .social a {
+        padding: 18px;
+        font-size: 25px;
+        line-height: 20px;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/* ==========================================================================
+   Loading Spin on index 
+   ========================================================================== */
+#loading{
+	width: 50px;
+	height: 50px;
+	border: 5px solid #ccc;
+	border-top-color: #ff6a00;
+	border-radius: 100%;
+	
+	/*to center*/
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	
+	/*round and round*/
+	animation: round 2s linear infinite;
+}
+@keyframes round{
+	from{transform: rotate(0deg)}
+	to{transform: rotate(360deg)}
+}
+
+
+
+/***** 	Guia/Feed/Caléndario/Hórarios.html	 *****/
+.sidenav-guia {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav-guia a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+	
+}
+
+.sidenav-guia a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+	
+}
+
+#templatemo_guia {
+    background: url(../images/pattern_bg4.png) fixed;	
+    /*background:  url(../images/.jpg) fixed;*/
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 130px;
+    color: #000000;
+	
+}
+
+	p.text-myway{
+		text-align:left;
+	}
+	
+#templatemo_guia .templatemo_guia_myway {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#templatemo_guia h10 {
+   font:bold  18px 'Fira Sans', sans-serif;
+    
+}
+
+
+/* ==========================================================================
+   Horarios
+   ========================================================================== */
+#listforbutton ul {
+	list-style:none;
+	
+}
+
+ul.buttonsorg{
+	text-align: center;
+}
+
+ul.buttonsorg li{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -ms-flex;
+	display: inline-flex;
+	margin: 0 2.25%;
+	
+}
+   
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+
+.buttonturnos
+{
+  text-decoration: none;
+  text-align: center;
+  font-family: "Nunito", sans-serif; font-size: 24px; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #b9090b;
+
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  
+  margin: 5em auto;
+  
+  position: static; 
+  top:0; right:0; bottom:0; left:0;
+  
+  padding: 20px 0;
+  width: 220px;
+  height:87px; /*Tamanho  da altura do botão caso ele fique cortado*/
+
+  background: #b9090b; /*Cor background*/
+  border: 1px solid #b9090b; /*Cor borda*/
+  color: #FFF; /*Cor letra */
+  overflow: hidden;
+  
+  transition: all 0.5s;
+}
+
+.buttonturnos:hover, .buttonturnos:active 
+{
+  text-decoration: none;
+  color: #b9090b;
+  border-color: #b9090b;
+  background: #FFF;
+}
+
+.buttonturnos span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+.buttonturnos span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+.buttonturnos:hover span, .buttonturnos:active span 
+{
+  padding-right: 30px;
+}
+
+.buttonturnos:hover span:after, .buttonturnos:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #b9090b;
+  right: 0;
+  top: 50%;
+}
+   
+   
+/*	Horarios turnos	*/
+
+@sR: #B9090B;  /*Cor do titulo da tabela*/
+@sRLight: #B9090B + #222;  /*cor da barra da semana */
+
+@darkGrey:#6b6b6b; /*cor das letras das matérias*/
+@offWhite:#f6f3f7;
+
+@darkBg:#f6f3f7 - #222; /*cor .o fun.o .as matérias*/
+
+
+.flatTable{  
+  font-family:Lato;
+  width:96%;
+  min-width:500px;
+  border-collapse:collapse;  
+  font-weight:bold;
+  color:/*@darkGrey;*/ #6b6b6b;
+  margin-left: 2%;
+  opacity:0.9;
+  }
+  
+  .flatTable:hover {
+  font-family:Lato;
+  width:96%;
+  min-width:500px;
+  border-collapse:collapse;  
+  font-weight:bold;
+  color:/*@darkGrey;*/ #6b6b6b;
+  margin-left: 2%;
+  opacity:0.97;	  
+  }
+  
+  tr{
+    height:50px;
+    background:/*@darkBg;*/ #f6f3f7;
+    
+    border-bottom:rgba(0,0,0,.05) 1px solid;
+  }
+  
+  td{    
+    box-sizing:border-box;
+    padding-left:30px;
+    
+  }
+
+.titleTr{
+  height:70px;  
+  color:#f6f3f7; 
+  background:/*@sR; */ #B9090B; 
+  border:0px solid;
+  text-align: center;
+}
+
+.controlTd{  
+  position:relative;
+  width:80px; /*cuidado aqui, pixels*/
+  background:url(http://i.imgur.com/9Q5f6cv.png) center center no-repeat;
+  
+}
+  
+.headingTr{
+    height:30px;
+    background:/*@sRLight;*/ #f52427;
+    color:/*@offWhite;*/ #f6f3f7;
+    font-size:8pt;
+    border:0px solid;
+}  
+/*}*/
+
+  .title{
+    width:100%;
+    height:70px;
+    padding-top:20px;
+    padding-left:20px;
+    box-sizing:border-box;
+    background:rgba(0,0,0,.1); 
+  }
+  
+h3{	
+	text-align: center;
+	color: #eee;
+}
+
+h4{
+	text-align: center;
+	color: #eee;
+}
+
+#tt {
+	text-align: center;
+	color: #eee;
+	font: 25px 'Fira Sans', sans-serif;
+	
+	}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#nav-3 {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  background: #B9090B;
+}
+
+#nav-3 a {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#nav-3 a:hover {
+  text-decoration: none;		
+  background-color: #ffffff;
+  color: #B9090B;
+  padding: 32px 30px; /*Tomar cuidado com os primeiros px do padding, pode mudar as medidas dependendo da resolução*/
+}
+
+
+#hm_medio{
+    background: url(../images/students1.jpg) no-repeat center fixed;
+    padding-bottom: 130px;
+}
+#hm_info{
+    background: url(../images/students1.jpg) no-repeat center fixed;
+    padding-bottom: 130px;
+}
+#hm_adm{
+    background: background: url(../images/students2.jpg) no-repeat center fixed;
+    padding-bottom: 130px;
+}
+#hm_log{
+    background: url(../images/students2.jpg) no-repeat center fixed;
+    padding-bottom: 130px;
+}
+#hm_edif{
+    background: url(../images/students2.jpg) no-repeat center fixed;
+    padding-bottom: 130px;
+}#hm_mec{
+    background: background: url(../images/students2.jpg) no-repeat center fixed;
+    padding-bottom: 130px;
+}
+#hm_di{
+    background: url(../images/black.jpeg) no-repeat center top fixed;
+    padding-bottom: 130px;
+}
+
+/*	CALENDARIO.html	*/
+
+ul {list-style-type: none;}
+
+
+/* Month header */
+.month {
+	
+	font-family: Verdana, sans-serif;
+	margin-left: 0.5%;
+	margin-right: 1%;
+    padding: 70px 25px;
+    width: 100%;
+    background: #ba1812;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+	
+	
+
+
+
+
