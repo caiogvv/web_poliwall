@@ -1,6 +1,11 @@
-# Site TCC Etec Polivalente
-O site é protótipo de divulgação do projeto de conclusão de curso utilizando PHP, JavaScript, jQuery e Bootstrap feito alguns anos atrás.
+[![](readme_assets/webpage.png)](https://youtu.be/ReXt2JTre80)
 
+# Web Pag
 
-![](readme_assets/video.mp4)
-
+<table>
+<tbody><tr>
+<td>
+ Este site é um protótipo de divulgação do app de conclusão de curso utilizando PHP, JavaScript, jQuery e Bootstrap feito há alguns anos. 
+</td>
+</tr>
+</tbody></table>   
